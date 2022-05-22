@@ -397,6 +397,25 @@
           </svg></a></li>
         </ul>
       </div>
+
+      
+        
+        <form class="form" name="subscription-form" autocomplete="on" novalidate>
+          <h3 class="subtitle">Подпишитесь на рассылку</h3>
+          <div class="subscription">
+
+          <label>
+           
+            <input class="form-input" type="email" name="email" placeholder="E-mail" required minlength="6" />
+          </label>
+          <button type="submit">Подписаться<svg class="icon-footer" width="24" height="24">
+            <use href="./imeges/icons.svg#icon-icon-send">
+            </use>
+          </svg></button>
+        </div>
+        </form>
+
+      
     </div>
  
     </footer>
@@ -406,12 +425,79 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close" data-modal-close><svg width="30" height="30">
-          <use href="./imeges/icons.svg#icon-close-black-18dp-2-1">
+          <use href="./imeges/icons.svg#icon-close">
           </use></svg>
         </button>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ab voluptas porro iusto labore laboriosam ea dolorem molestiae nam officia! Nemo, numquam itaque quos fugit eum officia beatae deleniti rerum!
+        <form class="modal-form" autocomplete="on" novalidate>
+          <p>Оставьте свои данные, мы вам перезвоним</p>
 
-        </p>
+          <ul class="list personal-data">
+            <li >
+              <label class="personal-data-unit">
+              <span>Имя</span>
+              
+              <input class="modal-input"  type="text" name="username" autofocus />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./imeges/icons.svg#icon-person">
+                </use></svg>
+              
+            </label>
+            
+          
+            </li>
+
+            <li>
+              <div >
+              <label class="personal-data-unit">
+              <span>Телефон</span>
+              <input class="modal-input"  type="tel" name="phone_number" />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./imeges/icons.svg#icon-phone">
+                </use></svg>
+            </label>
+            
+            </li>
+
+            <li >
+              <label class="personal-data-unit">
+              <span>Почта</span>
+              <input class="modal-input"  type="email" name="email" />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./imeges/icons.svg#icon-email">
+                </use></svg>
+            </label>
+            
+            </li>
+
+            <li>
+                  <label class="personal-data-unit">
+              <span>Комментарии</span>
+              <textarea name="feedback" rows="5" placeholder="Введите текст"></textarea>
+            </label>
+            </li>
+
+            <label>
+              <input type="checkbox" name="hobby" value="reading" />
+              <span>Соглашаюсь с рассылкой и принимаю </span>
+              <a  href="">Условия договора</a>
+            </label>
+                        
+          </ul>
+          
+          
+        
+          <button class="button" type="submit">Отправить</button>
+
+
+        </form>
+
+
+
+
+
+
+
+        
         
       </div>
     </div>
